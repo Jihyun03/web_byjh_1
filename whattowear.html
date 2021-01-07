@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>오늘 뭐 입지?</title>
+        <meta charset="utf-8">
+        <meta name="Description" content="기온에 따라 추천해드리는 오늘의 코디 " />
+        <meta name="Keywords" content="코디, 오늘날씨, 옷, 패딩, 코트, 오늘기온, 날씨, 기온" />
+        <meta name="author" content="Journey_03" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0" />
+        <link href="whattowear_v1.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>오늘 뭐 입지?</h1>
+        <p>패딩은 너무 더울까? 반바지는 너무 추울까?</p>
+        <p>매일 아침 옷 고민을 해결해요</p>
+        <div id="grid">
+            <div>
+                <h2>오늘 외출 장소는?</h2> <br/>
+                <form id="check">
+                    <label for="temp">당신의 위치는?</label>
+                    <input id="temp" type="text" />
+                    <button type="submit">코디 추천받기</button>
+                </form>
+            </div>
+            <div>
+                <h2>날씨 직접 확인하기</h2>
+                <form action="https://openweathermap.org/find" method="get">
+                    <label for="q">도시 영문 이름 입력</label>
+                    <input id="q" type="text" name="q" />
+                    <button type="submit">바로가기</button>
+                </form>
+            </div>
+        </div>
+
+        <a href="https://www.google.com/search?q=%EA%B8%B0%EC%98%A8%EB%B3%84+%EC%98%B7%EC%B0%A8%EB%A6%BC&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjOy_CQo4fuAhUTzmEKHVSDAdkQ_AUoAXoECBcQAw&biw=1280&bih=610&dpr=1.5">
+        기온별 옷차림 이미지로 보기</a>
+        <script src="whattowear.js"></script>
+        <script src="GET_TEMP.JS"></script>
+    </body>
+</html>
